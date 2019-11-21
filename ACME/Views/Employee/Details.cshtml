@@ -1,0 +1,62 @@
+﻿@model ACME.Employee
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Employee</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <p>
+        <dt>
+            Employee Number
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmployeeNum)
+        </dd>
+        </p>
+
+        <p>
+        <dt>
+            Last Name
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Person.LastName)
+        </dd>
+        </p>
+
+        <p>
+        <dt>
+            Employed Date
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmployedDate)
+        </dd>
+        </p>
+
+        <p>
+        <dt>
+            Terminated Date
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TerminatedDate)
+        </dd>
+        </p>
+
+
+
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.EmployeeId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

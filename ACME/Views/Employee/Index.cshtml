@@ -1,0 +1,57 @@
+﻿@model IEnumerable<ACME.Employee>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+<form asp-controller="EmployeeController" asp-action="Search" method="get">
+    <p>
+        <input class="glyphicon-search" type="text" id="findName" placeholder="Search by Surname"name="employeeSearch" />
+        <input type="submit" value="Search" />
+    </p>
+</form>
+
+<p>
+    @Html.ActionLink("Hire", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Last Name 
+        </th>
+        <th>
+            Employee Number 
+        </th>
+        <th>
+            Date Hired 
+        </th>
+        <th>
+            Date Fired
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Person.LastName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EmployeeNum)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EmployedDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TerminatedDate)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.EmployeeId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.EmployeeId })
+        </td>
+    </tr>
+}
+
+</table>

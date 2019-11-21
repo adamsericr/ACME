@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1><center>ACME</center></h1>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <h2>Welcome to ACME</h2>
+        <p>
+            ACME is a project that demonstrate simple CRUD
+            operations using Entity Framework 6 in an
+            ASP.NET MVC 5 web application.
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>View Employees</h2>
+        <p>Here you can view the current employees and execute function. (Read, Update)</p>
+        <p><a class="btn btn-default" @Html.ActionLink("Employees", "Index", "Employee")</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Hire</h2>
+        <p>Here you can view Everyone in the Database. You can create/delete people</p>
+        <p><a class="btn btn-default" @Html.ActionLink("People", "Index", "Person")</a></p>
+    </div>
+</div>

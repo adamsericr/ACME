@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.705
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACME", "ACME\ACME.csproj", "{59AB3A67-9ABD-47B1-A0A1-925AF942978E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{59AB3A67-9ABD-47B1-A0A1-925AF942978E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59AB3A67-9ABD-47B1-A0A1-925AF942978E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59AB3A67-9ABD-47B1-A0A1-925AF942978E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59AB3A67-9ABD-47B1-A0A1-925AF942978E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A6A3F04B-0A77-4737-9D32-EB1C54DDA006}
+	EndGlobalSection
+EndGlobal
